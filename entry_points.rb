@@ -1,5 +1,5 @@
 dep 'base system' do
-  on :osx {
+  on(:osx) {
     requires 'richo osx environment'
   }
 end
