@@ -4,13 +4,13 @@ meta :font, :for => :osx do
 
   template {
     met? {
-      provides.all?{|font| File.exists?(File.join(home, "Library", "Fonts", "#{font}.ttf"))}
+      provides.all?{|font| File.exists?(File.join("/".p, "Library", "Fonts", "#{font}.ttf"))}
     }
     
     meet {
       source.each {|uri|
         Babushka::Resource.extract uri do
-          shell "cp *.ttf #{File.join(home, "Library", "Fonts")}"
+          shell "cp *.ttf #{File.join("/".p, "Library", "Fonts")}"
         end
       }
     }

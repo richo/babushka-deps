@@ -5,6 +5,7 @@ dep 'base system' do
 end
 
 dep 'richo osx environment' do
-  requires 'emoji fonts are gone'
+  requires 'emoji fonts are gone',
+           'bitstream-vera.font'
 end
 
