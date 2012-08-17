@@ -224,7 +224,7 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock showhidden -bool true
 
 # Put the dock at the top of the screen
-defaults write com.apple.Dock orientation top
+defaults write com.apple.dock pinning -string start
 
 # Reset Launchpad
 find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
