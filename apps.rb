@@ -14,6 +14,10 @@ dep 'iTerm.app' do
   source 'http://iterm2.googlecode.com/files/iTerm2-1_0_0_20120726.zip'
 end
 
+dep 'Sequel Pro.app' do
+  source 'http://sequel-pro.googlecode.com/files/Sequel_Pro_0.9.9.1.dmg'
+end
+
 dep 'irssi.brew'
 dep 'zsh.brew'
 dep 'tig.brew'
