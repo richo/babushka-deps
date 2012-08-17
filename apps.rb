@@ -16,7 +16,4 @@ end
 
 dep 'irssi.brew'
 dep 'zsh.brew'
-dep 'macvim' do
-  # Do sweet hax to get a nice macvim installed in sane places
-end
 dep 'tig.brew'
