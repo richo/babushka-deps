@@ -1,10 +1,11 @@
 dep 'base system' do
   on(:osx) {
     requires 'richo osx environment',
-             'benhoskings:Google Chrome.app',
-             'benhoskings:Skype.app',
-             'benhoskings:Firefox.app',
-             'Alfred.app'
+             'Alfred.app',
+             'Adium.app',
+             '1Password.app',
+             'iTerm.app',
+             'Bowtie.app'
   }
 end
 

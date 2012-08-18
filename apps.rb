@@ -18,6 +18,10 @@ dep 'Sequel Pro.app' do
   source 'http://sequel-pro.googlecode.com/files/Sequel_Pro_0.9.9.1.dmg'
 end
 
+dep 'Bowtie.app' do
+  source 'http://bowtieapp.com/bowtie-1.5.zip'
+end
+
 dep 'irssi.brew'
 dep 'zsh.brew'
 dep 'tig.brew'
