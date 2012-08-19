@@ -11,6 +11,7 @@ end
 
 dep 'richo osx environment' do
   requires 'emoji fonts are gone',
-           'bitstream-vera.font'
+           'bitstream-vera.font',
+           'ctags.managed'
 end
 
