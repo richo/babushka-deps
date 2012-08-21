@@ -1,0 +1,1 @@
+dep 'lame.managed'
