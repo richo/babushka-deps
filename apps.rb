@@ -22,6 +22,10 @@ dep 'Bowtie.app' do
   source 'http://bowtieapp.com/bowtie-1.5.zip'
 end
 
+dep 'Transmission.app' do
+  source 'http://download.transmissionbt.com/files/Transmission-2.61.dmg'
+end
+
 dep 'irssi.brew'
 dep 'zsh.brew'
 dep 'tig.brew'
