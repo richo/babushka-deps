@@ -1,3 +1,8 @@
+dep 'Gimp.app' do
+  requires 'XQuartz.app'
+  source 'http://downloads.sourceforge.net/gimponosx/GIMP-2.8.0p1-Mountain-Lion.dmg'
+end
+
 dep 'ImageOptim.app' do
   source 'http://imageoptim.com/ImageOptim.tbz2'
 end
