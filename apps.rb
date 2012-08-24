@@ -26,6 +26,10 @@ dep 'Transmission.app' do
   source 'http://download.transmissionbt.com/files/Transmission-2.61.dmg'
 end
 
+dep 'IceFloor.app' do
+  source 'http://www.hanynet.com/icefloor-1.2.zip'
+end
+
 dep 'irssi.brew'
 dep 'zsh.brew'
 dep 'tig.brew'

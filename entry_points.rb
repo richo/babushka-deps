@@ -15,3 +15,6 @@ dep 'richo osx environment' do
            'ctags.managed'
 end
 
+dep 'minimal environment' do
+  requires 'shell defaults to vi mode'
+end
