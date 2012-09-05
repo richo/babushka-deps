@@ -16,3 +16,13 @@ dep 'iam tools installed' do
     }
   }
 end
+
+dep 'autoscaling tools installed' do
+  met? { shell? "which as-create-auto-scaling-group" }
+  meet {
+    on(:osx) {
+      shell "brew install auto-scaling"
+      shell "brew link auto-scaling"
+    }
+  }
+end
