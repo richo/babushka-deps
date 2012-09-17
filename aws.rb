@@ -26,3 +26,13 @@ dep 'autoscaling tools installed' do
     }
   }
 end
+
+dep 'rds tools installed' do
+  met? { shell? "which rds-describe-db-security-groups" }
+  meet {
+    on (:osx) {
+      shell "brew install rds-command-line-tools"
+      shell "brew link rds-command-line-tools"
+    }
+  }
+end
