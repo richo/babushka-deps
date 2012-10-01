@@ -30,6 +30,10 @@ dep 'IceFloor.app' do
   source 'http://www.hanynet.com/icefloor-1.2.zip'
 end
 
+dep "Slate.app" do
+  source "http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz"
+end
+
 dep 'irssi.brew'
 dep 'zsh.brew'
 dep 'tig.brew'
