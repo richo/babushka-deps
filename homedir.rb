@@ -13,9 +13,10 @@ end
 
 dep 'dotfile up to date', :path, :file do
   setup {
+    filename = File.basename(file)
     @config = ConfigFile.new(
-      :src => File.join(path, file),
-      :dest => File.expand_path("~/.#{file}")
+      :src => file,
+      :dest => File.expand_path("~/.#{filename}")
     )
   }
   met? {
