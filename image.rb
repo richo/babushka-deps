@@ -1,6 +1,5 @@
 dep 'Gimp.app' do
-  requires 'XQuartz.app'
-  source 'http://downloads.sourceforge.net/gimponosx/GIMP-2.8.0p1-Mountain-Lion.dmg'
+  source 'ftp://ftp.gimp.org/pub/gimp/v2.8/osx/gimp-2.8.2-dmg-2.dmg'
 end
 
 dep 'ImageOptim.app' do
