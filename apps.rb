@@ -34,6 +34,10 @@ dep "Slate.app" do
   source "http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz"
 end
 
+dep "Wireshark.app" do
+  source "http://wiresharkdownloads.riverbed.com/wireshark/osx/Wireshark%201.8.3%20Intel%2064.dmg"
+end
+
 dep 'irssi.brew'
 dep 'zsh.brew'
 dep 'tig.brew'
