@@ -38,6 +38,10 @@ dep "Wireshark.app" do
   source "http://wiresharkdownloads.riverbed.com/wireshark/osx/Wireshark%201.8.3%20Intel%2064.dmg"
 end
 
+dep "Nocturne.app" do
+  source "http://blacktree-nocturne.googlecode.com/files/Nocturne.2.0.0.zip"
+end
+
 dep 'irssi.brew'
 dep 'zsh.brew'
 dep 'tig.brew'
