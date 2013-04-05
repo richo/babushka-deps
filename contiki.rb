@@ -23,7 +23,7 @@ dep 'mcmote toolchain' do
     File.exists? "/usr/local/arm-none-eabi/bin/arm-none-eabi-gcc"
   }
   meet {
-    Dir.mkdir "/usr/local/arm-none-eabi"
+    Dir.mkdir "/usr/local/arm-none-eabi" rescue nil
     shell("tar -xjf /tmp/#{DCG_TOOLCHAIN_FILENAME} -C /usr/local/arm-none-eabi --strip 1")
   }
 end
