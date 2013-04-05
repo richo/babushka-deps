@@ -3,6 +3,7 @@ DCG_TOOLCHAIN_FILENAME = "gcc-arm-none-eabi-4_7-2013q1-20130313-mac.tar.bz2"
 
 dep 'dcg development environment' do
   requires 'avrdude.managed',
+           'open-ocd.managed',
            'mcmote toolchain'
 end
 
@@ -40,3 +41,6 @@ dep 'mcmote toolchain archive' do
 end
 
 dep 'avrdude.managed'
+dep 'open-ocd.managed' do
+  provides ['openocd']
+end
