@@ -1,5 +1,15 @@
 require 'digest/md5'
-DCG_TOOLCHAIN_FILENAME = "gcc-arm-none-eabi-4_7-2013q1-20130313-mac.tar.bz2"
+
+DCG_PLATFORM = case RUBY_PLATFORM
+               when /linux/ then "linux"
+               when /darwin/ then "mac"
+               else raise "Unsupported platform"
+               end
+DCG_TOOLCHAIN_FILENAME = "gcc-arm-none-eabi-4_7-2013q1-20130313-#{DCG_PLATFORM}.tar.bz2"
+DCG_TOOLCHAIN_CHECKSUMS = {
+  "linux" => "bcf845e5cd0608a0d56825d8763cba77",
+  "mac" => "017aebb1e47dd772bd535741c68df5de"
+}
 
 dep 'dcg development environment' do
   requires 'avrdude.managed',
@@ -32,7 +42,7 @@ dep 'mcmote toolchain archive' do
 
   met? {
     File.exists?("/tmp/#{DCG_TOOLCHAIN_FILENAME}") &&
-    get_digest == "017aebb1e47dd772bd535741c68df5de"
+    get_digest == DCG_TOOLCHAIN_CHECKSUMS[DCG_PLATFORM]
   }
 
   meet {
@@ -43,4 +53,8 @@ end
 dep 'avrdude.managed'
 dep 'open-ocd.managed' do
   provides ['openocd']
+  installs {
+    via :apt, ['openocd']
+    via :brew, ['open-ocd']
+  }
 end
